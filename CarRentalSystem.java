@@ -124,16 +124,14 @@ public class CarRentalSystem {
             } else if (adminChoice == 2) {
                 showCars();
             } else if (adminChoice == 3) {
-                System.out.print("\nEnter customer name: ");
-                String customerName = scanner.nextLine();
                 System.out.print("\nEnter Customer Username: ");
                 String customerUsername = scanner.nextLine();
                 System.out.print("Enter Customer PIN: ");
                 String customerPIN = scanner.nextLine();
-                String customerId = "CUS" + (customers.size() + 1);
-                Customer newCustomer = new Customer(customerId, customerName, customerUsername, customerPIN);
+                String customerId = "CUS" + (customers.size() + 1); // Generate unique ID
+                Customer newCustomer = new Customer(customerId, "New Customer", customerUsername, customerPIN);
                 addCustomer(newCustomer);
-                System.out.println("\nCustomer added successfully! Name: " + customerName + ", Username: " + customerUsername + ", PIN: " + customerPIN);
+                System.out.println("\nCustomer added successfully! Username: " + customerUsername + ", PIN: " + customerPIN);
             } else if (adminChoice == 4) {
                 break;
             } else {
