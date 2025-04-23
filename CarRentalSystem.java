@@ -114,11 +114,11 @@ public class CarRentalSystem {
                 String brand = scanner.nextLine();
                 System.out.print("Enter Model: ");
                 String model = scanner.nextLine();
-                System.out.print("Enter Base Price Per Day: ");
-                double basePricePerDay = scanner.nextDouble();
+                System.out.print("Enter Price per day: ");
+                double PricePerDay = scanner.nextDouble();
                 scanner.nextLine();
 
-                Car newCar = new Car(carId, brand, model, basePricePerDay);
+                Car newCar = new Car(carId, brand, model, PricePerDay);
                 addCar(newCar);
                 System.out.println("\nCar added successfully.");
             } else if (adminChoice == 2) {
