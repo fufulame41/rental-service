@@ -128,7 +128,6 @@ public class CarRentalSystem {
                 String customerUsername = scanner.nextLine();
                 System.out.print("Enter Customer PIN: ");
                 String customerPIN = scanner.nextLine();
-                String customerId = "CUS" + (customers.size() + 1); // Generate unique ID
                 Customer newCustomer = new Customer(customerId, "New Customer", customerUsername, customerPIN);
                 addCustomer(newCustomer);
                 System.out.println("\nCustomer added successfully! Username: " + customerUsername + ", PIN: " + customerPIN);
