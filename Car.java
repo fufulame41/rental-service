@@ -2,13 +2,13 @@ public class Car {
     private String carId;
     private String brand;
     private String model;
-    private double basePricePerDay;
+    private double PricePerDay;
 
-    public Car(String carId, String brand, String model, double basePricePerDay) {
+    public Car(String carId, String brand, String model, double PricePerDay) {
         this.carId = carId;
         this.brand = brand;
         this.model = model;
-        this.basePricePerDay = basePricePerDay;
+        this.PricePerDay = PricePerDay;
     }
 
     public String getCarId() {
@@ -23,7 +23,7 @@ public class Car {
         return model;
     }
 
-    public double getBasePricePerDay() {
-        return basePricePerDay;
+    public double getPricePerDay() {
+        return PricePerDay;
     }
 }
