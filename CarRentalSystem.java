@@ -71,7 +71,7 @@ public class CarRentalSystem {
     public void showCars() {
         System.out.println("\n===== Car Inventory =====");
         for (Car car : cars) {
-            System.out.println(car.getCarId() + " - " + car.getBrand() + " " + car.getModel() + star);
+            System.out.println(car.getCarId() + " - " + car.getBrand() + " " + car.getModel()  + " | Price per day: $" + car.getPricePerDay());
         }
     }
 
@@ -182,7 +182,7 @@ public class CarRentalSystem {
                         }
                     }
                     if (!isInterested) {
-                        System.out.println(car.getCarId() + " - " + car.getBrand() + " " + car.getModel());
+                        System.out.println(car.getCarId() + " - " + car.getBrand() + " " + car.getModel() + " | Price per day: $" + car.getPricePerDay());
                     }
                 }
 
