@@ -18,16 +18,16 @@ public class CarRentalSystem {
     }
     
     public void initializeCars() {
-        addCar(new Car("C01", "Toyota", "Camry", 60.0));
-        addCar(new Car("C02", "Honda", "Accord", 70.0));
-        addCar(new Car("C03", "Mahindra", "Thar", 150.0));
-        addCar(new Car("C04", "Ford", "Mustang", 120.0));
-        addCar(new Car("C05", "Chevrolet", "Cruze", 80.0));
-        addCar(new Car("C06", "BMW", "X5", 200.0));
-        addCar(new Car("C07", "Mercedes-Benz", "E-Class", 180.0));
-        addCar(new Car("C08", "Audi", "Q7", 220.0));
-        addCar(new Car("C09", "Nissan", "Altima", 75.0));
-        addCar(new Car("C10", "Hyundai", "Tucson", 90.0));
+        addCar(new Car("C01", "Toyota", "Corolla", 40.0));
+        addCar(new Car("C02", "Honda", "Civic", 45.0));
+        addCar(new Car("C03", "Ford", "Escape", 55.0));
+        addCar(new Car("C04", "Chevrolet", "Malibu", 50.0));
+        addCar(new Car("C05", "Nissan", "Sentra", 42.0));
+        addCar(new Car("C06", "Hyundai", "Elantra", 43.0));
+        addCar(new Car("C07", "Kia", "Sportage", 60.0));
+        addCar(new Car("C08", "Volkswagen", "Jetta", 48.0));
+        addCar(new Car("C09", "Subaru", "Outback", 65.0));
+        addCar(new Car("C10", "Jeep", "Wrangler", 75.0));
     }
 
     public void menu() {
@@ -71,7 +71,7 @@ public class CarRentalSystem {
     public void showCars() {
         System.out.println("\n===== Car Inventory =====");
         for (Car car : cars) {
-            System.out.println(car.getCarId() + " - " + car.getBrand() + " " + car.getModel());
+            System.out.println(car.getCarId() + " - " + car.getBrand() + " " + car.getModel() + star);
         }
     }
 
